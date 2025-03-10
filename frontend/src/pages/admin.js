@@ -105,7 +105,7 @@ export default function AdminPage() {
 
       {/* Product List */}
       <h2 className="text-lg font-semibold mt-4">Product List</h2>
-      <div className="grid grid-cols-3 gap-4">
+      <div style={{display: "flex", flexDirection: "row", gap: "10px"}}>
         {products.map((product) => (
           <div key={product._id} className="border p-2 shadow-lg rounded-md relative">
             <img src={product.image_url || "https://via.placeholder.com/150"} alt={product.name} className="w-full h-40 object-cover" style={{width: "280px"}}/>
